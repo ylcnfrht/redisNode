@@ -1,2 +1,2 @@
 # redisNode
-This repo contains all redis methods for node js
+This repo contains all redis commands for node js
