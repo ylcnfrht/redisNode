@@ -1,6 +1,8 @@
 var redis = require('redis');
 var client = redis.createClient();
 
+// lpushx: Prepend a value to a list, only if the list exists
+
 client.lpush('mylist', 'World', function (err, res) {
   console.log(res); // 1
 });

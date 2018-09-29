@@ -1,6 +1,8 @@
 var redis = require('redis');
 var client = redis.createClient();
 
+// hmget: Get the values of all the given hash fields
+
 client.hset('myhash', 'field1', 'Hello', function (err, res) {
   console.log(res); // 1
 });

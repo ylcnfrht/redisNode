@@ -1,6 +1,8 @@
 var redis = require('redis');
 var client = redis.createClient();
 
+// lpush: Prepend one or multiple values to a list
+
 client.lpush('mylist', 'world', function (err, res) {
   console.log(res); // 1
 });

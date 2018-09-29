@@ -1,6 +1,8 @@
 var redis = require('redis');
 var client = redis.createClient();
 
+// mget: Get the values of all the given keys
+
 client.set('key1', 'Hello', function (err, res) {
   console.log(res); // OK
 });

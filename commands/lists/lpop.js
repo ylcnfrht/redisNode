@@ -1,6 +1,8 @@
 var redis = require('redis');
 var client = redis.createClient();
 
+// lpop: Remove and get the first element in a list
+
 client.rpush('mylist', 'one', function (err, res) {
   console.log(res); // 2
 });

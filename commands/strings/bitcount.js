@@ -1,6 +1,8 @@
 var redis = require('redis');
 var client = redis.createClient();
 
+// bitcount: Count set bits in a string
+
 client.set('mykey', 'foobar', function (err, res) {
   console.log(res); // OK
 });

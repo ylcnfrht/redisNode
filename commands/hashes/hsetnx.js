@@ -1,6 +1,8 @@
 var redis = require('redis');
 var client = redis.createClient();
 
+// hsetnx: Set the value of a hash field, only if the field does not exist
+
 client.hsetnx('myhash', 'field', 'Hello', function (err, res) {
   console.log(res); // 1
 });

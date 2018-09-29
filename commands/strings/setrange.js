@@ -1,5 +1,8 @@
 var redis = require('redis');
 var client = redis.createClient();
+
+// setrange: Overwrite part of a string at key starting at the specified offset
+
 client.set('key1', 'Hello World', function (err, res) {
   console.log(res); // OK
 });

@@ -1,6 +1,8 @@
 var redis = require('redis');
 var client = redis.createClient();
 
+// hincrby: Increment the integer value of a hash field by the given number
+
 client.hset('myhash', 'field', 5, function (err, res) {
   console.log(res); // 1
 });

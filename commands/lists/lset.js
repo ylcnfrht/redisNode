@@ -1,6 +1,8 @@
 var redis = require('redis');
 var client = redis.createClient();
 
+// lset: Set the value of an element in a list by its index
+
 client.rpush('mylist', 'one', function (err, res) {
   console.log(res); // 1
 });

@@ -1,6 +1,8 @@
 var redis = require('redis');
 var client = redis.createClient();
 
+// get: Get the value of a key
+
 client.get('nonexisting', function(err, res) {
   console.log(res); // null
 });

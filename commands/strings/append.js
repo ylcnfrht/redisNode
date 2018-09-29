@@ -1,6 +1,8 @@
 var redis = require('redis');
 var client = redis.createClient();
 
+// append: Append a value to a key
+
 client.exists('mykey', function (err, res) {
   console.log(res); // 0
 });

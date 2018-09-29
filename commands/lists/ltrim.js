@@ -1,6 +1,8 @@
 var redis = require('redis');
 var client = redis.createClient();
 
+// ltrim: Trim a list to the specified range
+
 client.rpush('mylist', 'one', function (err, res) {
   console.log(res); // 1
 });

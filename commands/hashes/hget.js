@@ -1,6 +1,8 @@
 var redis = require('redis');
 var client = redis.createClient();
 
+// hget: Get the value of a hash field
+
 client.hset('myhash', 'field1', 'foo', function (err, res) {
   console.log(res); // 1
 });

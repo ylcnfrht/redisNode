@@ -1,6 +1,8 @@
 var redis = require('redis');
 var client = redis.createClient();
 
+// rpop: Remove and get the last element in a list
+
 client.rpush('mylist', 'one', function (err, res) {
   console.log(res); // 1
 });

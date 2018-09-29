@@ -1,6 +1,8 @@
 var redis = require('redis');
 var client = redis.createClient();
 
+// lrem: Remove elements from a list
+
 client.rpush('mylist', 'hello', function (err, res) {
   console.log(res); // 1
 });

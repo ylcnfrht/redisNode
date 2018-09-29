@@ -1,6 +1,8 @@
 var redis = require('redis');
 var client = redis.createClient();
 
+// linsert: Insert an element before or after another element in a list
+
 client.rpush('mylist', 'World', function (err, res) {
   console.log(res); // 1
 });

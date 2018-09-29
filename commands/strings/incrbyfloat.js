@@ -1,6 +1,8 @@
 var redis = require('redis');
 var client = redis.createClient();
 
+// incrbyfloat: Increment the float value of a key by the given amount
+
 client.set('mykey', 10.50, function (err, res) {
   console.log(res); // OK
 });

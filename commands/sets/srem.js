@@ -1,6 +1,8 @@
 var redis = require('redis');
 var client = redis.createClient();
 
+// srem: Remove one or more members from a set
+
 client.sadd('myset', 'one', function (err, res) {
   console.log(res); // 1
 });
