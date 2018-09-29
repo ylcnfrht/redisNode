@@ -12,3 +12,4 @@ client.getset('mycounter', '0', function (err, res) {
 client.get('mycounter', function (err, res) {
   console.log(res); // 0
 });
+   

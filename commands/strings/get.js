@@ -12,3 +12,4 @@ client.set('mykey', 'Hello', function(err, res) {
 client.get('mykey', function(err, res) {
   console.log(res); // Hello
 });
+

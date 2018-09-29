@@ -12,7 +12,6 @@ client.get('key1', function (err, res) {
   console.log(res); // 'Hello Redis'
 });
 
-
 // Example of zero padding:
 
 client.setrange('key2', 6, 'Redis', function (err, res) {
