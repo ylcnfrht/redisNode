@@ -12,3 +12,4 @@ client.strlen('mykey', function (err, res) {
 client.strlen('nonexisting', function (err, res) {
   console.log(res); // 0
 });
+ 
