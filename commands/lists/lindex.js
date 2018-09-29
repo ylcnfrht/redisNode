@@ -1,6 +1,8 @@
 var redis = require('redis');
 var client = redis.createClient();
 
+// lindex: Get an element from a list by its index
+
 client.lpush('mylist', 'World', function (err, res) {
   console.log(res); // 1
 });

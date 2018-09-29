@@ -1,6 +1,8 @@
 var redis = require('redis');
 var client = redis.createClient();
 
+// llen: Get the length of a list
+
 client.lpush('mylist', 'World', function (err, res) {
   console.log(res); // 1
 });

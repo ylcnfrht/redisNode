@@ -1,6 +1,8 @@
 var redis = require('redis');
 var client = redis.createClient();
 
+// bitop: Perform bitwise operations between strings
+
 client.set('key1', 'foobar', function (err, res) {
   console.log(res); // OK
 });

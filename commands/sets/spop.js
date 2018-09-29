@@ -1,6 +1,8 @@
 var redis = require('redis');
 var client = redis.createClient();
 
+// spop: Remove and return one or multiple random members from a set
+
 client.sadd('myset', 'one', function (err, res) {
   console.log(res); // 1
 });

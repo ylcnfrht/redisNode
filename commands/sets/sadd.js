@@ -1,6 +1,8 @@
 var redis = require('redis');
 var client = redis.createClient();
 
+// sadd: Add one or more members to a set
+
 client.sadd('mykey', 'Hello', function (err, res) {
   console.log(res); // 1
 });

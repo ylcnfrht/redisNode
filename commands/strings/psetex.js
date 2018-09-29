@@ -1,6 +1,8 @@
 var redis = require('redis');
 var client = redis.createClient();
 
+// psetex: Set the value and expiration in milliseconds of a key
+
 client.psetex('mykey', 1000, 'Hello', function (err, res) {
   console.log(res); // OK
 });

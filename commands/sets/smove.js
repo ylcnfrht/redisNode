@@ -1,6 +1,8 @@
 var redis = require('redis');
 var client = redis.createClient();
 
+// smove: Move a member from one set to another
+
 client.sadd('myset', 'one', function (err, res) {
   console.log(res); // 1
 });

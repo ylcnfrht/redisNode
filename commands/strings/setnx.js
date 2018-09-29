@@ -1,6 +1,8 @@
 var redis = require('redis');
 var client = redis.createClient();
 
+// setnx: Set the value of a key, only if the key does not exist
+
 client.setnx('mykey', 'Hello', function (err, res) {
   console.log(res); // 0
 });

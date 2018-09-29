@@ -1,6 +1,8 @@
 var redis = require('redis');
 var client = redis.createClient();
 
+// scard: Get the number of members in a set
+
 client.sadd('mykey', 'Hello', function (err, res) {
   console.log(res); // 1
 });

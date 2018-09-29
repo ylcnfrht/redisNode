@@ -1,6 +1,8 @@
 var redis = require('redis');
 var client = redis.createClient();
 
+// rpushx: Append a value to a list, only if the list exists
+
 client.rpush('mylist', 'hello', function (err, res) {
   console.log(res); // 1
 });

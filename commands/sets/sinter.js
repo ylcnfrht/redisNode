@@ -1,6 +1,8 @@
 var redis = require('redis');
 var client = redis.createClient();
 
+// sinter: Intersect multiple sets
+
 client.sadd('key1', 'a', function (err, res) {
   console.log(res); // 1
 });

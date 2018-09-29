@@ -1,6 +1,8 @@
 var redis = require('redis');
 var client = redis.createClient();
 
+// hlen: Get the number of fields in a hash
+
 client.hset('myhash', 'field1', 'Hello', function (err, res) {
   console.log(res); // 1
 });

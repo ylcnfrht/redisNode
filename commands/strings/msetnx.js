@@ -1,6 +1,8 @@
 var redis = require('redis');
 var client = redis.createClient();
 
+// msetnx: Set multiple keys to multiple values, only if none of the keys exist
+
 client.msetnx('key1', 'Hello', 'key2', 'there', function (err, res) {
   console.log(res); // 1
 });

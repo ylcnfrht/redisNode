@@ -1,6 +1,7 @@
 var redis = require('redis');
 var client = redis.createClient();
 
+// rpoplpush: Remove the last element in a list, prepend it to another list and return it
 
 client.rpush('mylist', 'one', function (err, res) {
   console.log(res); // 1
