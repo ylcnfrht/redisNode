@@ -1,5 +1,5 @@
 ### redisNode
-This repo contains examples of all redis commands for node js
+This repo contains examples for all redis commands for node js
 
 ##### Install with:
 
